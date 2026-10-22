@@ -1,0 +1,8 @@
+{
+  "name": "cloud-island-scavenger",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test src/logic.test.js"
+  }
+}

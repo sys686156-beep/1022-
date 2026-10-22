@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#9ddcf3"><title>雲端拾荒者｜空中之島</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+  <main id="game" aria-label="雲端拾荒者 3D 遊戲">
+    <div class="sky-wash"></div>
+    <header class="topbar"><a class="brand" href="#" aria-label="雲端拾荒者首頁"><span class="brand-mark">✳</span><span>雲端<span class="brand-light">拾荒者</span></span></a><div class="top-meta"><span class="live-dot"></span>浮島遠征 <span class="meta-divider">/</span> DAY 01 <button id="soundBtn" class="icon-btn" aria-label="切換音效">♫</button></div></header>
+    <section class="hud" id="hud" aria-live="polite">
+      <div class="objective"><div class="eyebrow"><span class="eyebrow-line"></span> TODAY'S QUEST</div><strong>把散落的島嶼，<em>接起來。</em></strong><span class="quest-note">收集方塊，搭一座通往新世界的橋。</span></div>
+      <div class="hud-stats"><div class="stat-card"><span>STAR DUST</span><strong id="dustCount">00</strong><small>✦</small></div><div class="weather-card"><span class="weather-icon" id="weatherIcon">☀</span><div><span>天氣</span><strong id="weatherText">晴朗</strong></div></div></div>
+      <div class="crosshair" id="crosshair"><i></i><b></b></div>
+      <div class="toast" id="toast"></div>
+      <div class="bottom-hud"><div class="controls"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 移動</span><span><kbd>SPACE</kbd> 跳躍</span><span><kbd>R</kbd> 流星雨</span></div><div class="hotbar" id="hotbar"></div><div class="mouse-help"><span class="mouse-icon">⌖</span> 左鍵挖掘 <span class="help-dot">·</span> 右鍵放置</div></div>
+    </section>
+    <div id="startScreen" class="start-screen"><div class="start-card"><div class="start-spark">✳</div><div class="eyebrow">A SMALL WORLD ABOVE THE CLOUDS</div><h1>雲端<span>拾荒者</span></h1><p>浮島之間，只差一座自己搭起的橋。<br>挖下第一塊方塊，開始你的遠征。</p><button id="startBtn" class="start-btn">開始遠征 <span>↗</span></button><div class="start-hint">點擊畫面即可鎖定滑鼠 · ESC 返回游標</div></div><div class="start-footer">WEEK 07 <span>✳</span> 像工程師一樣開發</div></div>
+    <div id="pointerHint" class="pointer-hint">點擊遊戲畫面以繼續 <span>ESC</span></div>
+    <div id="fade" class="fade"></div>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
